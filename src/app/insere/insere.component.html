@@ -1,0 +1,13 @@
+<nav style="margin-bottom: 20px">
+  <a routerLink="/home">Voltar</a>
+</nav>
+
+<label for="nome">Nome: </label>
+<input id="nome" type="text" [formControl]="nome">
+<button (click)="adiciona()">Adiciona</button>
+
+<div style="margin-top: 20px">
+  <ul *ngFor="let nome of _dataService.dados">
+    <li>{{nome}}</li>
+  </ul>
+</div>
