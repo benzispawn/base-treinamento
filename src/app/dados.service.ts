@@ -40,7 +40,7 @@ export class DadosService {
       if (nome.length > 0)
         this.dados[idx] = novo;
       else
-        this.dados.splice(idx + 1, idx + 2);
+        this.dados.splice(idx + 1,  1);
 
       this._dados.next(this.dados);
     }
